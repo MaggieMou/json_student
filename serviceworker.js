@@ -6,7 +6,7 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
       // Fetch data & add fetch result to cache
-      return cache.addAll(['/members/', '/members/index.html', '/members/nina.png']);
+      return cache.addAll(['/members/', '/members/index.html', '/members/nina.png','/members/olivia.png', '/members/morten.png' ]);
     })
   );
 });
