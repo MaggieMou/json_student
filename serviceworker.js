@@ -1,12 +1,12 @@
 // The name of the cache
-const cacheName = 'cache-members';
+const cacheName = 'cache-json_student';
 
 // On first load, create the cache 
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
       // Fetch data & add fetch result to cache
-      return cache.addAll(['/members/', '/members/index.html', '/members/nina.png','/members/olivia.png', '/members/morten.png' ]);
+      return cache.addAll(['/json_student/', '/json_student/index.html', '/json_student/nina.png','/json_student/olivia.png', '/json_student/morten.png', 'json_student/mystyle.css', 'json_student/members.json ]);
     })
   );
 });
